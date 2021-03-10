@@ -1,4 +1,4 @@
-# SearchApp1
+# SearchApp
 Search API with SASS
 
 Branch test 1: Progressed with the SASS imports.
