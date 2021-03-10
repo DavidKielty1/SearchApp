@@ -1,7 +1,4 @@
 # SearchApp1
 Search API with SASS
 
-Progressed with the SASS imports.
-
-Testest2
-222
+Branch test 1: Progressed with the SASS imports.
