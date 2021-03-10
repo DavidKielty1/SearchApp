@@ -3,12 +3,12 @@ export const deleteSearchResults = () => {
   let child = parentElement.lastElementChild;
   while (child) {
     parentElement.removeChild(child);
-    child - parentElement.lastElementChild;
+    child = parentElement.lastElementChild;
   }
 };
 
 export const buildSearchResults = (resultArray) => {
-  resultArrayArray.forEach((result) => {
+  resultArray.forEach((result) => {
     const resultItem = createResultItem(result);
     const resultContents = document.createElement("div");
     resultContents.classList.add("resultContents");
@@ -19,7 +19,7 @@ export const buildSearchResults = (resultArray) => {
     const resultText = createResultText(result);
     resultContents.append(resultText);
     resultItem.append(resultContents);
-    const searchResults = document.getElementsByTagName("searchReults");
+    const searchResults = document.getElementById("searchResults");
     searchResults.append(resultItem);
   });
 };

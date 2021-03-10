@@ -16,7 +16,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="dist/css/styles.min.css" />
-    <link rel="stylesheet" href="./sass/_searchResults2.scss" />
+    <link rel="stylesheet" href="./sass/_searchResults.scss" />
     <script src="./js/main.js" type="module"></script>
     <title>SearchApp</title>
   </head>
@@ -36,11 +36,17 @@
           <span class="yellow">e</span>
           <span class="red exclaim">!</span>
         </div>
-        <form id="searchBar" class="searchBar">
+        <form id="searchBar" class="searchBar" role="search">
           <label for="search" class="offscreen"
             >Enter a search term or phrase</label
           >
-          <input type="text" id="search" name="search" autocomplete="off" />
+          <input
+            type="text"
+            id="search"
+            name="search"
+            autocomplete="off"
+            role="searchbox"
+          />
           <div
             id="clear"
             class="none button clear"
@@ -66,13 +72,16 @@
           <div id="stats" class="stats" aria-live="assertive"></div>
         </div>
         <div id="searchResults" class="searchResults">
-          <div class="resultItem">
+          <!-- <div class="resultItem">
             <div class="resultTitle">
               <a href="">Mandarin Lessons</a>
             </div>
             <div class="resultContents">
               <div class="resultImage">
-                <img src="" alt="Manadarin" />
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Short-haired-Dachshund.jpg/50px-Short-haired-Dachshund.jpg"
+                  alt="Manadarin"
+                />
               </div>
               <div class="resultText">
                 <p class="resultDescription">
@@ -81,7 +90,7 @@
                 </p>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
     </main>

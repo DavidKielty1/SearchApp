@@ -1,5 +1,5 @@
 export const getSearchTerm = () => {
-  const rawSearchTerm = document.getElementById("#search").value.trim();
+  const rawSearchTerm = document.getElementById("search").value.trim();
   const regex = /[ ]{2,}/gi;
   const searchTerm = rawSearchTerm.replaceAll(regex, " ");
   return searchTerm;
@@ -10,7 +10,7 @@ export const retrieveSearchResults = async (searchTerm) => {
   const wikiSearchResults = await requestData(wikiSearchString);
   let resultArray = [];
   if (wikiSearchResults.hasOwnProperty("query")) {
-    resultArray = processWikiReults(wikiSearchResults.query.pages);
+    resultArray = processWikiResults(wikiSearchResults.query.pages);
   }
   return resultArray;
 };
